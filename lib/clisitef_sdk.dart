@@ -1,10 +1,10 @@
 library clisitef;
 
-import 'package:flutter_clisitef/model/clisitef_data.dart';
-import 'package:flutter_clisitef/model/pinpad_events.dart';
-import 'package:flutter_clisitef/model/pinpad_information.dart';
-import 'package:flutter_clisitef/model/tipo_pinpad.dart';
-import 'package:flutter_clisitef/model/transaction_events.dart';
+import 'package:clisitef_gpos720/model/clisitef_data.dart';
+import 'package:clisitef_gpos720/model/pinpad_events.dart';
+import 'package:clisitef_gpos720/model/pinpad_information.dart';
+import 'package:clisitef_gpos720/model/tipo_pinpad.dart';
+import 'package:clisitef_gpos720/model/transaction_events.dart';
 import 'package:flutter/services.dart';
 
 typedef TransactionEvent2Void = void Function(TransactionEvents,

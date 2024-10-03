@@ -2,7 +2,7 @@ library clisitef;
 
 import 'dart:async';
 
-import 'package:flutter_clisitef/model/pinpad_information.dart';
+import 'package:clisitef_gpos720/model/pinpad_information.dart';
 
 class PinPadStream {
   final _controller = StreamController<PinPadInformation>.broadcast();

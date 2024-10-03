@@ -2,8 +2,8 @@ library clisitef;
 
 import 'dart:async';
 
-import 'package:flutter_clisitef/model/transaction.dart';
-import 'package:flutter_clisitef/model/transaction_events.dart';
+import 'package:clisitef_gpos720/model/transaction.dart';
+import 'package:clisitef_gpos720/model/transaction_events.dart';
 
 class TransactionStream {
   TransactionStream(
