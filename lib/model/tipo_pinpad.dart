@@ -12,8 +12,10 @@ enum TipoPinPad {
   final String value;
 
   static TipoPinPad fromString(String value) {
-    final tipoPinPad =
-        TipoPinPad.values.firstWhere((filter) => filter.value == value);
+    final tipoPinPad = TipoPinPad.values.firstWhere(
+      (filter) => filter.value == value,
+      orElse: () => TipoPinPad.auto,
+    );
 
     return tipoPinPad;
   }
