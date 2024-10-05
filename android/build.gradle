@@ -19,7 +19,7 @@ rootProject.allprojects {
         google()
         mavenCentral()
         flatDir {
-            dirs project(':clisitef_gpos720').file('libs')
+            dirs project(':clisitef').file('libs')
         }        
     }
 }
