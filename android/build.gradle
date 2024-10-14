@@ -60,8 +60,9 @@ android {
 }
 
 dependencies {
-    implementation files('src/main/kotlin/libs/clisitef-android.jar')
-    implementation (name: 'PPCompGPOS720-v1.33-Complete-debug', ext: 'aar')
+    implementation files('src/main/kotlin/libs/clisitef-android-l400-debug.jar')
+    implementation (name: 'PositivoLIBSwe-15.8.40-debug', ext: 'aar')
+    implementation (name: 'PositivoAPI-15.6.4-release', ext: 'aar')
     implementation "androidx.concurrent:concurrent-futures:1.1.0"
 
     //implementation "androidx.room:room-runtime:2.4.3"
