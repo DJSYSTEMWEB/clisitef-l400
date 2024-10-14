@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-// import 'package:clisitef_gpos720/clisitef_method_channel.dart';
+// import 'package:clisitef_l400/clisitef_method_channel.dart';
 
 void main() {
   // MethodChannelClisitef platform = MethodChannelClisitef();

@@ -1,5 +1,5 @@
-name: clisitef_gpos720
-description: Implementação de pagamento Sitef para o dispositivo gpos720.
+name: clisitef_l400
+description: Implementação de pagamento Sitef para o dispositivo l400 da positivo.
 version: 0.0.1
 homepage:
 

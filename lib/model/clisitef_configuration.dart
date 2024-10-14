@@ -1,6 +1,6 @@
 library clisitef;
 
-import 'package:clisitef_gpos720/model/tipo_pinpad.dart';
+import 'package:clisitef_l400/model/tipo_pinpad.dart';
 
 class CliSiTefConfiguration {
   CliSiTefConfiguration({

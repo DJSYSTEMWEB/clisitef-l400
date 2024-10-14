@@ -1,6 +1,6 @@
 library clisitef;
 
-import 'package:clisitef_gpos720/model/transaction_events.dart';
+import 'package:clisitef_l400/model/transaction_events.dart';
 
 class Transaction {
   bool done = false;

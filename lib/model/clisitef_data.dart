@@ -1,6 +1,6 @@
 library clisitef;
 
-import 'package:clisitef_gpos720/model/data_events.dart';
+import 'package:clisitef_l400/model/data_events.dart';
 
 class CliSiTefData {
   CliSiTefData(

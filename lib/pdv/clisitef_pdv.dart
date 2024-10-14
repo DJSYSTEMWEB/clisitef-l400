@@ -1,17 +1,17 @@
 library clisitef;
 
-import 'package:clisitef_gpos720/clisitef_sdk.dart';
-import 'package:clisitef_gpos720/model/clisitef_configuration.dart';
-import 'package:clisitef_gpos720/model/clisitef_data.dart';
-import 'package:clisitef_gpos720/model/clisitef_resp.dart';
+import 'package:clisitef_l400/clisitef_sdk.dart';
+import 'package:clisitef_l400/model/clisitef_configuration.dart';
+import 'package:clisitef_l400/model/clisitef_data.dart';
+import 'package:clisitef_l400/model/clisitef_resp.dart';
 
-import 'package:clisitef_gpos720/model/pinpad_events.dart';
-import 'package:clisitef_gpos720/model/pinpad_information.dart';
-import 'package:clisitef_gpos720/model/transaction.dart';
-import 'package:clisitef_gpos720/model/transaction_events.dart';
-import 'package:clisitef_gpos720/pdv/stream/data_stream.dart';
-import 'package:clisitef_gpos720/pdv/stream/pin_pad_stream.dart';
-import 'package:clisitef_gpos720/pdv/stream/transaction_stream.dart';
+import 'package:clisitef_l400/model/pinpad_events.dart';
+import 'package:clisitef_l400/model/pinpad_information.dart';
+import 'package:clisitef_l400/model/transaction.dart';
+import 'package:clisitef_l400/model/transaction_events.dart';
+import 'package:clisitef_l400/pdv/stream/data_stream.dart';
+import 'package:clisitef_l400/pdv/stream/pin_pad_stream.dart';
+import 'package:clisitef_l400/pdv/stream/transaction_stream.dart';
 import 'package:flutter/services.dart';
 
 class CliSiTefPDV {
