@@ -10,7 +10,7 @@ enum Modalidade {
   vendaCarteiraDigital(122),
   historico(110),
   cancelamentoCarteiraDigital(123),
-  cancelamento(200);
+  cancelamento(123);
 
   const Modalidade(this.value);
   final int value;
