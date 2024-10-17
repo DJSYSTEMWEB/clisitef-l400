@@ -8,6 +8,7 @@ enum Modalidade {
   voucher(5),
   teste(6),
   vendaCarteiraDigital(122),
+  historico(110),
   cancelamentoCarteiraDigital(123),
   cancelamento(200);
 
