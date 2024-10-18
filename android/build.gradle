@@ -61,11 +61,13 @@ android {
 
 dependencies {
     implementation files('src/main/kotlin/libs/clisitef-android-l400-debug.jar')
-    implementation (name: 'PositivoLIBSwe-15.8.40-debug', ext: 'aar') {
-        exclude group: 'com.xcheng.printerservice', module: 'PositivoLIBSwe'
-    }
+    implementation (name: 'PositivoLIBSwe-15.8.40-debug', ext: 'aar')
     implementation (name: 'PositivoAPI-15.6.4-release', ext: 'aar')
     implementation "androidx.concurrent:concurrent-futures:1.1.0"
 
-
+    //implementation "androidx.room:room-runtime:2.4.3"
+    //implementation "androidx.room:room-ktx:2.4.3"
+    //implementation 'androidx.preference:preference:1.2.1'
+    //implementation 'com.google.code.gson:gson:2.10.1'
+    //implementation "androidx.work:work-runtime-ktx:2.7.1"
 }
