@@ -95,7 +95,14 @@ class ClisitefPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       "setPinpadDisplayMessage" -> pinPadMethods.setDisplayMessage(call.argument<String>("message")!!)
       "pinpadReadYesNo" -> pinPadMethods.readYesOrNo(call.argument<String>("message")!!)
       "pinpadIsPresent" -> pinPadMethods.isPresent()
-      "configure" -> tefMethods.configure(call.argument<String>("enderecoSitef")!!, call.argument<String>("codigoLoja")!!, call.argument<String>("numeroTerminal")!!, "[[TipoPinPad="+call.argument<String>("tipoPinPad")!!+"];[ParmsClient=1="+call.argument<String>("cnpjLoja")!!+";2="+call.argument<String>("cnpjAutomacao")!!+"]];"+call.argument<String>("parametrosAdicionais")!!)
+      "configure" -> tefMethods.configure(
+    call.argument<String>("enderecoSitef")!!,
+    call.argument<String>("codigoLoja")!!,
+    call.argument<String>("numeroTerminal")!!,
+    "[[TipoPinPad=" + call.argument<String>("tipoPinPad")!! + "];[ParmsClient=1=" + call.argument<String>("cnpjLoja")!! +
+    ";2=" + call.argument<String>("cnpjAutomacao")!! + "]]" +
+    (call.argument<String>("parametrosAdicionais")?.takeIf { it.isNotEmpty() }?.let { ";$it" } ?: "")
+),
       "getQttPendingTransactions" -> tefMethods.getQttPendingTransactions(call.argument<String>("dataFiscal")!!, call.argument<String>("cupomFiscal")!!)
       "startTransaction" -> tefMethods.startTransaction(cliSiTefListener, call.argument<Int>("modalidade")!!, call.argument<String>("valor")!!, call.argument<String>("cupomFiscal")!!, call.argument<String>("dataFiscal")!!, call.argument<String>("horario")!!, call.argument<String>("operador")!!, call.argument<String>("restricoes")!!)
       "finishLastTransaction" -> tefMethods.finishLastTransaction(call.argument<Int>("confirma")!!)
