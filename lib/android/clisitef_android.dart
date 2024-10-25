@@ -144,7 +144,7 @@ class CliSiTefAndroid implements CliSiTefSDK {
     return await _methodChannel
         .invokeMethod<int?>('getQttPendingTransactions', {
       'dataFiscal': DateFormat('yyyyMMdd').format(dataFiscal),
-      'cupomFiscal': '',
+      'cupomFiscal': cupomFiscal,
     });
   }
 
